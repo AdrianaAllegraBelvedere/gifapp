@@ -1,0 +1,16 @@
+<div class="gif-grid">
+  <article *ngFor="let gif of gifs" class="gif-card">
+    <img
+      [src]="gif.images.downsized_medium.url"
+      [alt]="gif.title"
+      class="gif-card__img"
+      loading="lazy"
+    >
+
+    <div class="gif-card__body">
+      <p class="gif-card__title" title="{{ gif.title }}">
+        {{ gif.title }}
+      </p>
+    </div>
+  </article>
+</div>

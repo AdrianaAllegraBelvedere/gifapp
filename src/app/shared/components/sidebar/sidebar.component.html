@@ -1,0 +1,26 @@
+<aside class="sidebar" id="sidebar">
+  <h3 class="sidebar__title">GifsApp</h3>
+  <hr class="sidebar__hr" />
+
+  <div class="sidebar__content">
+    <div class="sidebar__list">
+      <button
+        *ngFor="let tag of tags"
+        type="button"
+        (click)="searchTag(tag)"
+        class="sidebar__item"
+      >
+        {{ tag | titlecase }}
+      </button>
+    </div>
+
+    <button
+      type="button"
+      class="sidebar__clear"
+      (click)="clearHistory()"
+      [disabled]="tags.length === 0"
+    >
+      Limpiar historial
+    </button>
+  </div>
+</aside>
