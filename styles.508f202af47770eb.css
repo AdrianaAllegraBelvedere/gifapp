@@ -1,0 +1,1 @@
+:root{--bg: #050814;--panel: rgba(2,6,23,.72);--panel-solid: #0b1220;--text: #e5e7eb;--muted: #94a3b8;--border: rgba(148,163,184,.14);--accent: #ec4899;--accent2: #6366f1;--shadow: 0 20px 60px rgba(0,0,0,.55)}html,body{height:100%}body{margin:0;background:var(--bg);color:var(--text)}
